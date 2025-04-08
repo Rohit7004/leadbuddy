@@ -3,15 +3,15 @@
 import React from 'react';
 import Link from 'next/link';
 
-const LongTermPropertyLeads = () => {
+const RecentPropertyLeads = () => {
   return (
     <div className="font-sans text-gray-800 px-4 sm:px-6 lg:px-8">
       <div className="text-center py-12">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">
-          Patience Pays: Worth the Wait, Long-Term Property Inquiry Leads
+          Act Now: Recent Property Inquiry Leads
         </h1>
         <p className="text-lg mb-6">
-          Optimize long-term growth through strategic lead nurturing of Long-Term Inquiries Leads.
+          Drive immediate results through rapid engagement with high-intent buyers.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link href="/leadcostcalculator">
@@ -35,39 +35,26 @@ const LongTermPropertyLeads = () => {
       <div className="flex flex-col lg:flex-row gap-8 py-8">
         <div className="lg:w-3/5 space-y-4">
           {[
-            ["Matured Needs", "Their needs might have evolved, making them ready to act."],
-            ["Reduced Competition", "Fewer agents might be competing for their attention now."],
-            ["Better Prepared Buyers", "Leads are often more informed and ready to make decisions."],
-            ["Lead Warmth", "Time can turn cold leads into warm ones, ready to engage."],
-            ["Follow-Up Impact", "Effective follow-ups can convert previously undecided inquiries."],
-            ["Cost Efficiency", "Typically less expensive to nurture existing leads than to acquire new ones."],
-            ["Higher Profit Margins", "Longer-term leads often result in higher-value transactions."],
-          ].map(([title, desc], idx) => (
-            <div key={idx} className="flex items-start">
+            ["High Buyer Intent", "Leads are actively searching and ready to engage."],
+            ["Fresh Opportunities", "Inquiries reflect current interest, enabling timely response."],
+            ["Shorter Sales Cycle", "Prospects are often close to decision-making."],
+            ["Focused Outreach", "Approach can be personalized to current buyer needs."],
+            ["Higher Engagement", "Better response rates than older or cold leads."],
+            ["Less Cold Calling", "Reduces time spent on non-responsive contacts."],
+            ["Competitive Advantage", "Quicker response gives an edge over other agents."],
+          ].map(([title, desc], i) => (
+            <div key={i} className="flex items-start">
               <span className="text-purple-600 text-xl mr-3">✓</span>
               <p><strong>{title}:</strong> {desc}</p>
             </div>
           ))}
         </div>
 
-        {/* Updated Metric Cards */}
         <div className="lg:w-2/5 grid grid-cols-2 gap-4">
           {[
-            {
-              value: "₹ 5",
-              label: "Avg. Cost/Lead",
-              desc: "Long-Term Leads"
-            },
-            {
-              value: "₹ 9,999",
-              label: "Billing Amount",
-              desc: "Minimum Order value"
-            },
-            {
-              value: "6–12",
-              label: "Months",
-              desc: "Inquiry Timeline"
-            },
+            { value: "₹ 45", label: "Avg. Cost/Lead", desc: "Recent Leads" },
+            { value: "₹ 34,999", label: "Billing Amount", desc: "Minimum Order value" },
+            { value: "1–3", label: "Months", desc: "Inquiry Timeline" },
           ].map(({ value, label, desc }, i) => (
             <div key={i} className="bg-gray-100 p-6 rounded-xl text-center shadow-sm border-t-4 border-purple-300">
               <p className="text-3xl font-bold text-gray-800">{value}</p>
@@ -84,23 +71,19 @@ const LongTermPropertyLeads = () => {
                   stroke="currentColor"
                   strokeWidth="4"
                   fill="none"
-                  d="M18 2.0845
-                     a 15.9155 15.9155 0 0 1 0 31.831
-                     a 15.9155 15.9155 0 0 1 0 -31.831"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                 />
                 <path
                   className="text-purple-700"
                   stroke="currentColor"
                   strokeWidth="4"
-                  strokeDasharray="87, 100"
+                  strokeDasharray="95, 100"
                   fill="none"
-                  d="M18 2.0845
-                     a 15.9155 15.9155 0 0 1 0 31.831
-                     a 15.9155 15.9155 0 0 1 0 -31.831"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center text-xl font-bold text-gray-800">
-                87%
+                95%
               </div>
             </div>
             <p className="mt-3 text-sm text-gray-700 font-medium">Avg. Quality</p>
@@ -108,43 +91,43 @@ const LongTermPropertyLeads = () => {
         </div>
       </div>
 
-      <div className="py-8 space-y-6">
-        <h2 className="text-xl font-semibold">Unlocking the Potential of Long-Term Property Inquiry Leads: A Comprehensive Guide for Real Estate Professionals</h2>
+      <div className="py-12 space-y-6 text-base leading-relaxed">
+        <h2 className="text-xl font-semibold">Recent Property Inquiry Leads: Fast-Tracking Real Estate Success</h2>
         <p>
-          In the highly competitive field of real estate, long-term property inquiry leads are a very good opportunity...
+          In today’s market, speed is key. Recent property inquiry leads offer unmatched potential for real estate professionals looking to close deals quickly.
         </p>
 
-        <h3 className="text-lg font-semibold">Long-Term Leads Are Valuable</h3>
+        <h3 className="text-lg font-semibold">Why Recent Leads Matter</h3>
         <p>
-          Long-term leads are inquiries that were not converted at the moment but with potential to become a buyer...
+          These leads are warm, relevant, and highly motivated—making them ideal for agents, brokers, and developers ready to act.
         </p>
 
-        <h3 className="text-lg font-semibold">Key Strategies to Develop Long-Term Leads</h3>
-        <ol className="list-decimal pl-6 space-y-3">
-          <li><strong>Personalized Re-Engagement:</strong> Revisit the first interaction...</li>
-          <li><strong>Educational Outreach:</strong> Position yourself as a resource...</li>
-          <li><strong>Regular Follow-Up:</strong> Keep a follow-up schedule systematized...</li>
-          <li><strong>Leverage Technology:</strong> Use technology to smooth the lead nurturing process...</li>
-          <li><strong>Feedback Mechanism:</strong> The message should encourage feedback...</li>
+        <h3 className="text-lg font-semibold">Key Engagement Strategies</h3>
+        <ol className="list-decimal pl-6 space-y-2">
+          <li><strong>Immediate Follow-Up:</strong> Contact within 1–2 hours to stay top of mind.</li>
+          <li><strong>Personalized Pitching:</strong> Address their specific property needs.</li>
+          <li><strong>CRM Utilization:</strong> Track inquiries, automate outreach, and stay organized.</li>
+          <li><strong>Responsive Content:</strong> Share listings, videos, or FAQs tailored to current buyers.</li>
+          <li><strong>Feedback Loop:</strong> Ask questions to better align with buyer goals.</li>
         </ol>
 
-        <h3 className="text-lg font-semibold">Practical Tips for Effective Lead Management</h3>
+        <h3 className="text-lg font-semibold">Tips to Maximize Results</h3>
         <ul className="list-disc pl-6 space-y-2">
-          <li><strong>Segment Your Leads:</strong> All your long-term leads are not the same...</li>
-          <li><strong>Exclusive Information:</strong> It gives the first availability of information to the leads...</li>
-          <li><strong>Develop a Content Strategy:</strong> Create content to discuss frequently asked questions...</li>
+          <li><strong>Sort by Urgency:</strong> Prioritize leads showing faster decision timelines.</li>
+          <li><strong>Send Timely Updates:</strong> Notify about availability and price changes.</li>
+          <li><strong>Leverage Exclusivity:</strong> Provide first-access to new listings.</li>
         </ul>
 
         <h3 className="text-lg font-semibold">Conclusion</h3>
         <p>
-          To real estate professionals, long-term property inquiry leads aren't just cold contacts...
+          Real estate professionals who act swiftly on recent inquiries convert more leads, shorten sales cycles, and boost profitability.
         </p>
         <p>
-          Such a focus helps close leads into customers through bespoke strategies made for their needs and desires...
+          Focused, timely action is the key to unlocking the value of recent property leads.
         </p>
       </div>
     </div>
   );
 };
 
-export default LongTermPropertyLeads;
+export default RecentPropertyLeads;
