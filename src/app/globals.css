@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --background: #ffffff; /* White background */
+  --foreground: #171717; /* Dark text */
+}
+
+/* Removed the @theme inline block unless specifically needed by a library 
+  or if you prefer defining theme variables this way. 
+  It doesn't directly affect the background color issue.
+*/
+
+/* Removed the dark mode block to force white background:
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a; 
+      --foreground: #ededed;
+    }
+  } 
+*/
+
+body {
+  background: var(--background); /* Uses the --background variable set above */
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
