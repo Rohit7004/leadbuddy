@@ -1,6 +1,56 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+
+// Define link data separately for clarity and maintainability
+const companyLinks = [
+  { href: "/aboutus", text: "About Us" },
+  { href: "/guide", text: "Real Estate Business Guide" },
+
+  { href: "/leadsquality", text: "Leads Quality" },
+  { href: "/sources", text: "Our Lead Sources" },
+  { href: "/privacy", text: "Privacy Policy" },
+  { href: "/terms", text: "Terms & Conditions" },
+  { href: "/disclaimer", text: "Disclaimer" },
+  { href: "/sitemap", text: "Sitemap" },
+  { href: "/careers", text: "Careers @ LeadBuddy" },
+  { href: "/vendor", text: "Vendor Login" },
+  { href: "/contact", text: "Contact Us" },
+];
+
+const serviceLinks = [
+  {
+    href: "/real-estate-property-leads-for-brokers-real-estate-agents",
+    text: "Real Estate - Property Leads for Brokers/Real-Estate Agents",
+  },
+  {
+    href: "/real-estate-property-leads-for-real-estate-marketing-agency",
+    text: "Real Estate - Property Leads for Real Estate Marketing Agency",
+  },
+  {
+    href: "/real-estate-property-leads-for-real-estate-builder-developers",
+    text: "Real Estate - Property Leads for Real Estate Builder/Developers",
+  },
+  {
+    href: "/hni-data-acquisition-as-a-broker",
+    text: "HNI Data Acquisition as a Broker",
+  },
+  {
+    href: "/property-price-negotiation-services",
+    text: "Property Price Negotiation Services",
+  },
+];
+
+const locationLinks = [
+  "Mumbai",
+  "Thane",
+  "Navi Mumbai",
+  "Mira-Bhayandar",
+  "Pune",
+  "Bengaluru (Bangalore)",
+  "Noida/Greater Noida",
+  "Delhi",
+];
 
 const Footer = () => {
   return (
@@ -9,26 +59,13 @@ const Footer = () => {
         {/* Company */}
         <div className="w-1/2 md:w-1/3">
           <h4 className="font-bold mb-3 text-gray-900">COMPANY</h4>
-          {[
-            <Link href="/
-            
-            guide" key="guide">Real Estate Business Guide</Link>,
-            <Link href="/leadsquality" key="leads">Leads Quality</Link>,
-            <Link href="/sources" key="sources">Our Lead Sources</Link>,
-            <Link href='/privacy' key="privacy">Privacy Policy</Link>,
-            <Link href="/terms" key="terms">Terms & Conditions</Link>,
-            <Link href="/disclaimer" key="disclaimer">Disclaimer</Link>,
-            <Link href="/sitemap" key="sitemap">Sitemap</Link>,
-            <Link href="/careers" key="careers">Careers @ LeadBuddy</Link>,
-            <Link href="/vendor" key="vendor">Vendor Login</Link>,
-            <Link href="/contact" key="contactus">Contact Us</Link>,
-          ].map((item, i) => (
+          {companyLinks.map((link) => (
             <Link
-              key={i}
-              href={`/${typeof item === 'string' ? item.toLowerCase().replace(/\s+|@/g, '-').replace(/[()]/g, '').replace(/-+/g, '-') : item.props.href.replace(/\s+|@/g, '-').replace(/[()]/g, '').replace(/-+/g, '-')}`}
+              key={link.href} // Use href as key assuming it's unique
+              href={link.href}
               className="block mb-2 hover:underline"
             >
-              {item}
+              {link.text}
             </Link>
           ))}
         </div>
@@ -36,19 +73,13 @@ const Footer = () => {
         {/* Services */}
         <div className="w-1/2 md:w-1/3 pr-4">
           <h4 className="font-bold mb-3 text-gray-900">SERVICES</h4>
-          {[
-            'Real Estate - Property Leads for Brokers/Real-Estate Agents',
-            'Real Estate - Property Leads for Real Estate Marketing Agency',
-            'Real Estate - Property Leads for Real Estate Builder/Developers',
-            'HNI Data Acquisition as a Broker',
-            'Property Price Negotiation Services',
-          ].map((item, i) => (
+          {serviceLinks.map((link) => (
             <Link
-              key={i}
-              href={`/${item.toLowerCase().replace(/\s+|\/|@/g, '-').replace(/[()]/g, '').replace(/-+/g, '-')}`}
+              key={link.href} // Use href as key assuming it's unique
+              href={link.href}
               className="block mb-2 hover:underline"
             >
-              {item}
+              {link.text}
             </Link>
           ))}
         </div>
@@ -56,35 +87,43 @@ const Footer = () => {
         {/* Locations */}
         <div className="w-full md:w-1/3">
           <h4 className="font-bold mb-3 text-gray-900">LOCATIONS</h4>
-          {[
-            'Mumbai',
-            'Thane',
-            'Navi Mumbai',
-            'Mira-Bhayandar',
-            'Pune',
-            'Bengaluru (Bangalore)',
-            'Noida/Greater Noida',
-            'Delhi',
-          ].map((city, i) => (
-            <Link
-              key={i}
-              href={`/${city.toLowerCase().replace(/\s+|\/|[()]/g, '-').replace(/-+/g, '-')}-leads`}
-              className="block mb-2 hover:underline"
-            >
-              Real Estate - Property Leads in {city}
-            </Link>
-          ))}
+          {locationLinks.map((city) => {
+            // Generate the href slug from the city name
+            const citySlug = city
+              .toLowerCase()
+              .replace(/\s+|\/|[()]/g, "-") // Replace spaces, slashes, parentheses with hyphens
+              .replace(/-+/g, "-"); // Replace multiple hyphens with a single one
+
+            return (
+              <Link
+                key={city} // Use city name as key assuming it's unique
+                href={`/${citySlug}-leads`}
+                className="block mb-2 hover:underline"
+              >
+                Real Estate - Property Leads in {city}
+              </Link>
+            );
+          })}
         </div>
       </div>
 
       {/* Footer Bottom */}
       <div className="border-t border-gray-300 mt-8 pt-5 text-center">
         <div className="flex justify-center items-center mb-2">
-          <Image src="/leadbuddy-logo.png" alt="Leadbuddy Logo" width={28} height={28} className="mr-2" />
+          <Image
+            src="/leadbuddy-logo.png"
+            alt="Leadbuddy Logo"
+            width={28}
+            height={28}
+            className="mr-2"
+          />
           <span className="font-bold text-gray-900">leadbuddy</span>
           <span className="ml-2 text-gray-700">Property Inquiry Leads</span>
         </div>
-        <p className="text-xs text-gray-500">© 2023 LeadBuddy™ All Rights Reserved.</p>
+        <p className="text-xs text-gray-500">
+          © {new Date().getFullYear()} LeadBuddy™ All Rights Reserved.
+        </p>{" "}
+        {/* Dynamic Year */}
       </div>
     </footer>
   );

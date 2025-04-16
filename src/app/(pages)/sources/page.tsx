@@ -2,119 +2,124 @@ import React from 'react';
 
 const LeadSources = () => {
   return (
-    <div className="container mx-auto py-8 px-4 sm:px-6 lg:px-8">
-      {/* Comprehensive and Verified Property Leads for Real Estate Success */}
-      <div className="mb-10">
-        <h2 className="text-xl font-semibold mb-4 text-gray-800 md:text-2xl">
-          Comprehensive and Verified Property Leads for Real Estate Success
-        </h2>
-        <p className="leading-relaxed text-gray-700 mb-4">
-          At Leadbuddy, we provide the quality and relevance of our leads, understanding that real estate professionals need genuine, market-driven connections for efficient conversions. Our multi-faceted approach ensures quality, verifying that every lead meets our high standards. From direct partnerships to strategic digital campaigns, we provide property leads that support your goals and drive meaningful engagements.
-        </p>
-      </div>
+    <div className="bg-white py-10 sm:py-16 lg:py-24">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Our Commitment To Lead Quality */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-6 text-purple-700">
+            Our Commitment To Lead Quality
+          </h2>
+          <p className="leading-relaxed text-lg text-gray-700 mb-6">
+            At Leadbuddy, we believe that quality matters. As a trusted provider of property leads for real estate professionals, we are committed to delivering leads that meet the highest standards of accuracy, intent, and relevance. Our approach to lead quality ensures that you receive connections ready for conversion, helping you drive results efficiently and consistently.
+          </p>
+          <p className="leading-relaxed text-lg text-gray-700">
+            We understand that every lead matters to your business. That's why Leadbuddy prioritizes quality at every stage, from sourcing to delivery, using industry best practices to ensure you get the best possible prospects for your real estate deals.
+          </p>
+        </section>
 
-      {/* Where Do Our Leads Come From? */}
-      <div className="mb-10">
-        <h3 className="text-lg font-semibold mb-4 text-gray-800 md:text-xl">Where Do Our Leads Come From?</h3>
-        <p className="leading-relaxed text-gray-700 mb-4">
-          Leadbuddy sources leads from multiple trusted channels, each contributing to a pool of high-quality, targeted opportunities.
-        </p>
-        <ul className="list-disc list-inside text-gray-700">
-          <li className="mb-2">
-            <strong className="font-semibold">Partnership Networks:</strong> Connecting with reputable property developers and builders allows us to gather leads from individuals proactively dealing with potential buyers and sellers. This ensures a consistent and reliable flow of high-intent prospects.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">Social Media and Targeted Ad Campaigns:</strong> We leverage social media platforms and targeted digital ad campaigns to capture leads actively searching for real estate opportunities. By matching users with specific property types and locations, we ensure relevance and increase conversion potential.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">Real Estate Events and Webinars:</strong> Hosting and attending industry events, webinars, and forums helps us attract qualified leads who are keen on market insights, property investment opportunities, and new developments, indicating a strong interest in real estate.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">Lead Exchanges:</strong> Collaborating with other trusted lead generation platforms enables us to broaden our reach, acquiring high-quality leads shared by industry professionals. These exchanges introduce a steady flow of leads tailored for various real estate needs.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">Website Opt-ins and Subscription Forms:</strong> Our website features various opt-in forms and subscription options, inviting individuals interested in exclusive market updates, updates, and real estate news. These subscribers are often motivated and engaged, making them ideal for your outreach.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">Referral Programs:</strong> Through our referral programs, individuals can share contact details of friends, colleagues, or family members interested in real estate. Each qualified referral offers an upfront warm lead, helping us expand our lead pool with trusted recommendations.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">Email Subscriptions and Newsletters:</strong> We gather leads through email subscription options on our site for real estate newsletters, market insights, and property updates, providing you with engaged readers who have an active interest in the property market.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">Real Estate Investment Groups and Forums:</strong> Engaging with online and offline real estate investment groups and forums allows us to gather leads from individuals actively looking to invest in property, giving you access to highly motivated prospects.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">Content Marketing and Blogging:</strong> By creating and distributing valuable resources, including market reports, guides, and insights, these materials attract readers who are actively seeking real estate information, capturing leads from individuals with high intent.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">Survey and Feedback Campaigns:</strong> Through targeted survey and feedback campaigns, we capture leads from property seekers who provide detailed insights, allowing us to identify individuals who are likely to invest in real estate.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">SMS Marketing:</strong> Our SMS marketing efforts target property updates and exclusive offers directly to potential buyers' mobile devices, ensuring high open rates and immediate engagement with interested buyers.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">Live Chat Interactions:</strong> We capture real-time inquiries directly from platform visitors when users are searching for properties, providing fresh, actionable leads for clients who prioritize immediate responses and buying opportunities.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">Cold Outreach Programs:</strong> Through targeted cold emailing and calling campaigns, we engage leads who have shown interest in real estate in the past, nurturing them with updated and new opportunities to gauge their current interest.
-          </li>
-          <li>
-            <strong className="font-semibold">Direct Sales and Industry Referrals:</strong> Our network of agents, brokers, and real estate professionals supplies referrals and direct contacts, ensuring a continuous flow of high-quality leads from trusted industry sources.
-          </li>
-        </ul>
-      </div>
+        {/* What Sets Our Leads Apart? */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-6 text-purple-700">
+            What Sets Our Leads Apart?
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Verified and Accurate Information</h3>
+              <ul className="list-disc list-inside text-lg text-gray-700 pl-6">
+                <li className="mb-2">Each lead is carefully vetted for accuracy. Our team cross-checks information to eliminate duplicates and ensure every detail is correct, from contact information to property preferences.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">High-Intent Prospects</h3>
+              <ul className="list-disc list-inside text-lg text-gray-700 pl-6">
+                <li className="mb-2">Our leads are sourced from individuals actively searching for properties, ensuring high intent. By focusing on buyers and investors ready to make a move, we deliver leads poised for conversion.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Segmented Lead Types</h3>
+              <ul className="list-disc list-inside text-lg text-gray-700 pl-6">
+                <li className="mb-2">Leadbuddy categorizes leads into Long-Term, Recent, and Fresh leads, allowing you to select the type best suited to your needs:</li>
+                <ul className="list-disc list-inside text-lg text-gray-700 ml-10">
+                  <li className="mb-1"><strong className="font-semibold">Long-Term Leads:</strong> For nurturing and future follow-ups.</li>
+                  <li className="mb-1"><strong className="font-semibold">Recent Leads:</strong> For prospects in the decision-making phase.</li>
+                  <li><strong className="font-semibold">Fresh Leads:</strong> For clients ready for immediate engagement.</li>
+                </ul>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Exclusive and Real-Time Leads</h3>
+              <ul className="list-disc list-inside text-lg text-gray-700 pl-6">
+                <li className="mb-2">Gain a competitive edge with leads delivered quickly and updated in real-time, minimizing competition and maximizing your opportunities to make timely connections.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Targeted Audience Reach</h3>
+              <ul className="list-disc list-inside text-lg text-gray-700 pl-6">
+                <li className="mb-2">Through our <strong className="font-semibold">Audience Reach Program</strong>, we help you access niche and targeted markets, resulting in our on your behalf to convert quality prospects without overwhelming costs.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-      {/* Our Approach to Lead Verification and Quality */}
-      <div className="mb-10">
-        <h3 className="text-lg font-semibold mb-4 text-gray-800 md:text-xl">Our Approach to Lead Verification and Quality</h3>
-        <p className="leading-relaxed text-gray-700 mb-4">
-          At Leadbuddy, we understand that every lead has undergone a meticulous verification process to ensure accuracy, intent, and relevance. Our multi-step process includes:
-        </p>
-        <ul className="list-disc list-inside text-gray-700">
-          <li className="mb-2">
-            <strong className="font-semibold">Data Validation:</strong> We cross-verify contact information across sources to ensure accuracy and eliminate duplicates.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">Intent Scoring:</strong> Each lead is assigned an activity indicator to reflect how highly interested and motivated the contact is.
-          </li>
-          <li>
-            <strong className="font-semibold">Engagement Tracking:</strong> We monitor lead engagement with our content and outreach, giving you insights into their current interest levels, helping you tailor your outreach effectively.
-          </li>
-        </ul>
-      </div>
+        {/* Our Quality Assurance Process */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-6 text-purple-700">
+            Our Quality Assurance Process
+          </h2>
+          <p className="leading-relaxed text-lg text-gray-700 mb-6">
+            Leadbuddy employs a multi-step quality assurance process to ensure each lead is worth your time and investment.
+          </p>
+          <ul className="list-disc list-inside text-lg text-gray-700 space-y-3 pl-6">
+            <li><strong className="font-semibold">Sourcing from Reliable Channels:</strong> Our leads come from reputable sources, including direct inquiries, partnerships, and real estate events, ensuring they are fresh, relevant, and interested.</li>
+            <li><strong className="font-semibold">Data Validation & Verification:</strong> Each lead undergoes rigorous verification for completeness and accuracy, confirming essential details like contact info, budget range, and property interests.</li>
+            <li><strong className="font-semibold">Intent-Based Filtering:</strong> We filter leads based on intent indicators, such as recent inquiries or active engagement with listings, to ensure you're connecting with motivated buyers.</li>
+            <li><strong className="font-semibold">Segmentation by Location and Type:</strong> Leads are categorized by prime locations across India, including Mumbai, Pune, Bangalore, and Delhi, and organized by property type for tailored engagement.</li>          <li><strong className="font-semibold">Feedback-Driven Improvements:</strong> We continuously refine our quality standards based on client feedback, enhancing the relevance and accuracy of leads to meet evolving market needs.</li>
+          </ul>
+        </section>
 
-      {/* Why Choose LeadBuddy's Sourced Leads? */}
-      <div className="mb-10">
-        <h3 className="text-lg font-semibold mb-4 text-gray-800 md:text-xl">Why Choose LeadBuddy's Sourced Leads?</h3>
-        <ul className="list-disc list-inside text-gray-700">
-          <li className="mb-2">
-            <strong className="font-semibold">Diverse and Trusted Sources:</strong> Our leads come from a well-rounded mix of channels, offering quality and relevance across property types.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">High Intent and Engagement:</strong> We focus on capturing leads from individuals showing clear interest in buying, selling, or investing in real estate.
-          </li>
-          <li className="mb-2">
-            <strong className="font-semibold">Verifiable and Actionable Lead Types:</strong> Each lead provides key information to help you tailor your pitch, including location, budget, and timelines.
-          </li>
-          <li>
-            <strong className="font-semibold">Prime Location Coverage:</strong> Our leads span key real estate markets, including Mumbai, Pune, Bangalore, and beyond.
-          </li>
-        </ul>
-      </div>
+        {/* Benefits of High-Quality Leads from LeadBuddy */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-6 text-purple-700">
+            Benefits of High-Quality Leads from LeadBuddy
+          </h2>
+          <ul className="list-disc list-inside text-lg text-gray-700 space-y-3 pl-6">
+            <li><strong className="font-semibold">Higher Conversion Rates:</strong> Verified, high-intent leads mean a higher likelihood of successful conversions, saving you time and resources.</li>
+            <li><strong className="font-semibold">Enhanced Efficiency:</strong> With segmented leads, you can focus on the prospects that best align with your sales strategy and timelines.</li>
+            <li><strong className="font-semibold">Better ROI on Marketing Efforts:</strong> Investing in quality leads ensures that your marketing spend translates into meaningful engagements and closed deals.</li>
+            <li><strong className="font-semibold">Reduced Follow-Up Efforts:</strong> Our real-time fresh leads are already engaged in the property buying process, allowing for fewer touchpoints and more productive follow-ups.</li>
+          </ul>
+        </section>
 
-      {/* Connect with Verified Property Leads Today */}
-      <div>
-        <h3 className="text-lg font-semibold mb-4 text-gray-800 md:text-xl">Connect with Verified Property Leads Today</h3>
-        <p className="leading-relaxed text-gray-700">
-          Choose Leadbuddy to access verified property leads sourced from multiple channels and connect with property seekers who are ready to take action. <strong className="font-semibold">Contact us today</strong> to learn more about how our leads can accelerate your real estate business.
-        </p>
-      </div>
-      <div className="box-content md:box-border ...">
+        {/* Lead Quality Metrics We Track */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-6 text-purple-700">
+            Lead Quality Metrics We Track
+          </h2>
+          <p className="leading-relaxed text-lg text-gray-700 mb-6">
+            Leadbuddy tracks specific metrics to maintain and improve lead quality:
+          </p>
+          <ul className="list-disc list-inside text-lg text-gray-700 space-y-3 pl-6">
+            <li><strong className="font-semibold">Accuracy Rate:</strong> Ensures contact data is reliable and up-to-date.</li>
+            <li><strong className="font-semibold">Conversion Rate Potential:</strong> Indicates how likely a lead is to move to the next stage.</li>
+            <li><strong className="font-semibold">Response Rate:</strong> Measures engagement levels based on our outreach and follow-up efforts.</li>
+            <li><strong className="font-semibold">Client Feedback:</strong> Incorporates user reviews to optimize lead sourcing and delivery.</li>
+          </ul>
+        </section>
 
-</div>
+        {/* Ready to Elevate Your Property Sales with LeadBuddy? */}
+        <section className="py-8 text-center">
+          <h2 className="text-2xl font-semibold mb-4 text-purple-700">
+            Ready to Elevate Your Property Sales with LeadBuddy?
+          </h2>
+          <p className="leading-relaxed text-lg text-gray-700 mb-6">
+            Choosing Leadbuddy means prioritizing quality, reliability, and value. Whether you're a real estate agent, broker, or developer, our high-quality leads are crafted to help you achieve your goals. Connect with us today to discover how our lead generation services can elevate your business and provide you with the prospects you need to succeed.
+          </p>
+          <p className="mt-4 text-lg text-gray-700">
+            For any questions regarding our lead quality process or to learn more about our service offerings, <strong className="font-semibold text-purple-700">Contact Us</strong>. At Leadbuddy, we are committed to helping you connect with high-quality leads and drive meaningful results for your real estate business.
+          </p>
+        </section>
+      </div>
     </div>
-    
   );
 };
 
