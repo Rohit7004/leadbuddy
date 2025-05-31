@@ -1,15 +1,14 @@
 import React from 'react';
-import Header from './Components/Header';
 import LeadSection from './Components/LeadSection';
-import Footer from './Components/Footer';
 
 const HomePage = () => {
   return (
-    <div >
-      
-      <LeadSection />
-      
-    </div>
+    <main role="main" className="homepage-container">
+      {/* Lead Section with Accessible Role */}
+      <section role="region" aria-labelledby="lead-title">
+        <LeadSection />
+      </section>
+    </main>
   );
 };
 
